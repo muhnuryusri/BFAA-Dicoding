@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        card_view:contentPaddingTop="15dp"
+        card_view:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_user"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/img_user"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/black"
+                android:text="@string/name"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_name"
+                android:textSize="12sp"
+                android:fontFamily="@font/inter_light"
+                android:textColor="@color/black"
+                android:text="@string/username" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_follow"
+                    card_view:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/black"
+                    android:text="@string/following" />
+
+                <TextView
+                    android:id="@+id/tv_following_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_light"
+                    android:textColor="@color/black"
+                    android:text="@string/following_text" />
+
+                <TextView
+                    android:id="@+id/tv_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_light"
+                    android:textColor="@color/black"
+                    android:text="@string/border" />
+
+                <TextView
+                    android:id="@+id/tv_followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/black"
+                    android:text="@string/followers" />
+
+                <TextView
+                    android:id="@+id/tv_followers_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_light"
+                    android:textColor="@color/black"
+                    android:text="@string/following_text" />
+            </LinearLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginStart="30dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/inter_semibold"
+                        android:textColor="@color/black"
+                        android:text="@string/location_text" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/inter_extralight"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="50dp"
+                        android:textSize="15sp"
+                        android:text="@string/location" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_marginStart="30dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/inter_semibold"
+                        android:textColor="@color/black"
+                        android:text="@string/repository_text" />
+
+                    <TextView
+                        android:id="@+id/tv_repository"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/inter_extralight"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="50dp"
+                        android:textSize="15sp"
+                        android:text="@string/repository" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_marginStart="30dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/inter_semibold"
+                        android:textColor="@color/black"
+                        android:text="@string/company_text" />
+
+                    <TextView
+                        android:id="@+id/tv_company"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="50dp"
+                        android:fontFamily="@font/inter_extralight"
+                        android:text="@string/company_text"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="235dp"
+            android:layout_marginLeft="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
