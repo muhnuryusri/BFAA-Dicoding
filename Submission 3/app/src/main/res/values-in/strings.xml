@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GitHub User</string>
+    <string name="splash_text">GitHub User</string>
+    <string name="detail_name">Details</string>
+    <string name="name"> </string>
+    <string name="username">Username</string>
+    <string name="following">0</string>
+    <string name="following_text">pengikut</string>
+    <string name="followers">0</string>
+    <string name="followers_text">mengikuti</string>
+    <string name="border">·</string>
+    <string name="location"> </string>
+    <string name="repositories">0</string>
+    <string name="repositories_text">repositori</string>
+    <string name="avatar">Avatar</string>
+
+    <string name="search_user">Cari Pengguna</string>
+    <string name="search">Cari</string>
+
+    <string name="search_text">Menunggu pencarian</string>
+
+    <string name="change_language">Ganti Bahasa</string>
+
+    <string name="favorite">Favorit</string>
+    <string name="favorite_users">Pengguna Favorit</string>
+
+    <string name="notification_settings">Pengaturan Notifikasi</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_favorite"
+        android:title="@string/favorite"
+        android:actionLayout="@layout/activity_main"
+        android:icon="@drawable/ic_favorite_selected"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_change_settings"
+        android:title="@string/change_language"
+        android:actionLayout="@layout/activity_main"
+        android:icon="@drawable/ic_language"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_notification_settings"
+        android:title="@string/notification_settings"
+        android:actionLayout="@layout/activity_main"
+        android:icon="@drawable/ic_alarm"
+        app:showAsAction="never"/>
+</menu>
